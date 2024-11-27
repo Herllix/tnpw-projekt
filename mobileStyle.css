@@ -52,7 +52,7 @@ nav main footer{
     display: none;
 }
 .nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     position:absolute;
     text-align: center;
@@ -61,16 +61,25 @@ nav main footer{
     left: 0;
     width: 100%;
     background-color: #387478;
-    padding: 10px 0;
+    overflow: hidden;
+    max-height: 0;
     z-index: 10;
+    gap:15px;
+    transition: max-height 0.5s ease, padding 0.6s ease-in-out; /* Animace výšky a paddingu */
 }
 .menuToggle:checked ~ .nav {
-    display: flex;
-    gap:15px;
+    max-height: 300px; 
+    padding: 10px 0;
+}
+.menuToggle:checked ~ .hamburger span {
+    background-color: red;
 }
 .navlink a{
     text-decoration: none;
     color: #243642d7;
+}
+.active a {
+    color: red;
 }
 .navlink img{
     display:none;
@@ -98,5 +107,6 @@ footer{
 }
 .flinks a {
     color: black;
+    margin-top: 2%;
     text-decoration: none;
 }

@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
 }
+/*lightbox se zobrazí po kliknutí na toggle*/
 .lightbox-toggle:checked + .lightbox {
     display: flex;
 }
@@ -54,12 +55,14 @@
 .project:hover{
     box-shadow: 0 10px 15px #387478;
 }
+/*miniatura projektu*/
 .thumbnail {
     width: 100%;
     height: 100%; 
     object-fit: cover; 
     cursor: pointer;
 }  
+/*zavírací tlačítko*/
 .close {
     position: absolute;
     top: 2%;

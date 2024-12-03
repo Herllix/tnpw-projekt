@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.menuToggle{
-    display: none;
-}
 html, body {
     font-family: sans-serif;
     font-size: 20px;
+}
+.menuToggle{
+    display: none;
 }
 .container {
     display: flex;
@@ -16,7 +16,7 @@ html, body {
     position: relative; 
     background-color: #243642d7;
 }
-.navstyle {
+nav {
     width: 4%;
     background-color: #387478;
     display: flex;
@@ -28,9 +28,7 @@ html, body {
     transition: 0.5s;
     position: fixed;
     overflow: hidden;
-}
-.navLogo{
-    transition: all 0.3s ease;
+    z-index: 10;
 }
 .mainLogo{
     display:flex;
@@ -43,21 +41,14 @@ html, body {
     width: 0; 
     transition:  0.5s ease,  0.5s ease; 
 }
+.navLogo{
+    transition: all 0.3s ease;
+}
 .logoText {
     white-space: nowrap; 
     opacity: 0;
     width: 0; 
     transition:  0.5s ease,  0.5s ease; 
-}
-.navstyle:hover .logoText {
-    opacity: 1;
-    margin-left: 50%;
-    white-space: nowrap; 
-}
-.navstyle:hover .mainLogoText {
-    opacity: 1;
-    margin-left: 15%;
-    white-space: nowrap; 
 }
 .nav {
     display: flex;
@@ -67,32 +58,39 @@ html, body {
     padding-top: 50px;
     gap: 15px;
 }
-
 .navlink {
     margin: 50% 0;
 }
-
 .navlink a {
     display: flex;
-    align-items: center;
+    margin-left: 62.5%;
     text-decoration: none;
     color: black;
-    margin-left: 60%;
     width: 100%; 
     background-color:#387478;
 }
-.navstyle:hover{
+nav:hover{
     width: 16%;
     transition: 0.5s;
+    z-index: 10;
 }
-
+nav:hover .logoText {
+    opacity: 1;
+    margin-left: 50%;
+    white-space: nowrap; 
+}
+nav:hover .mainLogoText {
+    opacity: 1;
+    margin-left: 15%;
+    white-space: nowrap; 
+}
 .navlink a:hover {
     color: rgb(163, 35, 35);
 }
+
 .active a {
     color: rgb(163, 35, 35);
 }
-
 .main-content {
     display: flex;
     flex: 1;
@@ -101,7 +99,7 @@ html, body {
     align-items: center;
     margin-top: 1%;
 }
-.main {
+main {
     display: flex;
     flex: 1;
     min-height: 100vh;
@@ -111,8 +109,7 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-
-.footer {
+footer {
     background-color: #243642d7;
     display: flex;
     gap: 3%;

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html, body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 .menuToggle{
@@ -85,11 +85,11 @@ nav:hover .mainLogoText {
     white-space: nowrap; 
 }
 .navlink a:hover {
-    color: rgb(163, 35, 35);
+    color: red;
 }
 
 .active a {
-    color: rgb(163, 35, 35);
+    color: red;
 }
 .main-content {
     display: flex;
@@ -104,7 +104,7 @@ main {
     flex: 1;
     min-height: 100vh;
     width: calc(100% - 27%);
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.76); 
     justify-content: center;
     align-items: center;

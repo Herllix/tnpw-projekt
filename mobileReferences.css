@@ -25,12 +25,12 @@
     padding:2%;
     border-radius:15px;
     position: relative;
+    overflow: auto;
 }
 .lightbox img {
     width: 100%;
     max-width: 150px;
     cursor: pointer;
-    transition: transform 0.3s ease;
     margin: 5px;
     object-fit: contain;
     border: solid #387478 2px;

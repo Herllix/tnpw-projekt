@@ -33,6 +33,7 @@ nav {
 .mainLogo{
     display:flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 .mainLogoText{
@@ -42,6 +43,7 @@ nav {
     transition:  0.5s ease,  0.5s ease; 
 }
 .navLogo{
+    margin-left: 12.5%;
     transition: all 0.3s ease;
 }
 .logoText {
